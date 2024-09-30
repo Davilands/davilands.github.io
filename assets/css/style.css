@@ -714,7 +714,7 @@ html {
   width: 90%;
   margin: 100px auto;
   margin-top: 300px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 .noi_bat .one,
@@ -874,7 +874,7 @@ html {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 
 .tong-quan {
