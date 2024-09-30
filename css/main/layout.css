@@ -10,29 +10,20 @@ html {
 
 }
 
+
+/* Định dạng menu */
+.menu {
+  color: white;
+  background: white;
+  z-index: 2;
+}
+
 .layout {
   display: flex;
   height: 100vh;
   margin-top: 50px;
 }
 
-/* Định dạng menu */
-.menu {
-  /* background-color: #333; */
-  color: white;
-  width: 96px;
-  padding: 20px;
-
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  background: white;
-  height: 100%;
-  z-index: 2;
-}
 
 .menu ul {
   list-style: none;
@@ -77,12 +68,6 @@ html {
   line-height: 11px;
 }
 
-.menu ul li .active {
-  background: #e8ebed;
-  color: #1a1a1a;
-
-}
-
 .menu ul li svg:not(:root).svg-inline--fa,
 svg:not(:host).svg-inline--fa {
   overflow: visible;
@@ -102,7 +87,35 @@ svg:not(:host).svg-inline--fa {
   flex: 1;
   background-color: white;
   padding: 20px;
-  margin-left: 117px;
+}
+
+/* PC */
+@media (min-width: 64em) {
+
+  /* Định dạng menu */
+  .menu {
+    width: 96px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: 100%;
+    z-index: 2;
+  }
+
+
+  .menu ul li .active {
+    background: #e8ebed;
+    color: #1a1a1a;
+  }
+
+
+  /* Định dạng container */
+  .container {
+    margin-left: 117px;
+  }
 }
 
 /* Media query cho mobile và tablet */
@@ -116,10 +129,11 @@ svg:not(:host).svg-inline--fa {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 45px;
   }
 
   .menu ul {
@@ -131,6 +145,12 @@ svg:not(:host).svg-inline--fa {
   .menu ul li {
     margin: 0;
   }
+
+
+  .menu ul li .active {
+    color: #007f31;
+  }
+
 
   .container {
     padding-bottom: 80px;
