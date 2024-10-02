@@ -132,6 +132,7 @@
 @media (max-width: 63.9375em) {
   .card {
     width: 100%;
+    margin-right: 0px;
   }
 
   .post-viral {
