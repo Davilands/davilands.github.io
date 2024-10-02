@@ -250,3 +250,18 @@ input:checked+.slider-btn:before {
     padding: 0.25em 0.75em;
   }
 }
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+  #slider {
+    display: block;
+  }
+
+  #slider .right,
+  #slider .right img {
+    padding-top: 20px;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+  }
+}

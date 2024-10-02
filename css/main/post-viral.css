@@ -101,6 +101,7 @@
 .user {
   display: flex;
   margin-top: auto;
+  bottom: 0;
 }
 
 .user img {
@@ -124,4 +125,16 @@
 
 .user-info small {
   font-size: 12px;
+}
+
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+  .card {
+    width: 100%;
+  }
+
+  .post-viral {
+    padding-right: 0px;
+  }
 }
