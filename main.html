@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/ico/icon.png" type="image/x-icon">
+
+  <!-- icon -->
+  <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="stylesheet" href="./css/main/scroll.css">
   <link rel="stylesheet" href="./css/main/header.css">
@@ -11,6 +16,9 @@
   <link rel="stylesheet" href="./css/main/post-viral.css">
 
   <script src="./css/main/js/header.js"></script>
+  <link rel="stylesheet" href="./css/main/slider.css">
+
+
   <title>Document</title>
 </head>
 
@@ -20,7 +28,7 @@
 
     <div class="" id="header">
       <div class="logo">
-        <img src="https://fullstack.edu.vn/assets/f8-icon-lV2rGpF0.png" alt="F8">
+        <img src="./assets/img/ico/frog-bc.png" alt="F8">
         <h1 class=""><a class="_subTitle_vdbp4_58 d-lg-none" href="/">Học Lập Trình Để Đi Làm</a></h1>
       </div>
 
@@ -77,20 +85,53 @@
         </li>
       </ul>
     </nav>
+
     <div class="container">
-      <h1>Main Content Area</h1>
-      <p>This is where the main content goes...</p>
+
+      <div id="slider">
+        <div class="left">
+          <div class="text-content">
+            <!-- <h1 class="text-heading">
+              <span class="text-heading welcome">Chào mừng đến với</span> <br>
+              <span id="heading-logo" class="heading-logo" style="color: #15825a;">DaviTek</span>
+            </h1> -->
+            <span class="text-heading welcome">Chào mừng đến với</span> <br>
+            <span id="heading-logo" class="heading-logo" style="color: #15825a;">DaviTek</span>
+            <div class="text-description">
+              <p>Một diễn đàn học tập dành cho developer</p>
+            </div>
+            <!-- <button onclick="showErrorToast();" class="button-88" role="button">Bắt đầu
+                        nào</button> -->
+
+            <button onclick="showErrorToast();" class="cssbuttons-io-button"> Bắt đầu nào
+              <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="assets/img/facion/frog-techs.gif">
+        </div>
+      </div>
 
       <div class="post-viral">
         <div class="title">
           <h2 class="title">Một số bài viết Nổi bật</h2>
-          <p>Xem thêm -></p>
+          <a>
+            <span>Xem thêm</span><i class='bx bx-chevron-right'></i>
+          </a>
         </div>
 
         <div class="cards">
           <div class="card">
             <div class="card-header">
-              <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+              <img src="./images/blog/img/banner.png" alt="rover" />
             </div>
             <div class="card-body">
               <span class="tag tag-teal">Technology</span>
@@ -114,8 +155,7 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg"
-                alt="ballons" />
+              <img src="./images/blog/img/laravel-socket.10ac0667.png" alt="ballons" />
             </div>
             <div class="card-body">
               <span class="tag tag-purple">Popular</span>
@@ -138,7 +178,7 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+              <img src="./images/blog/img/main.png" alt="city" />
             </div>
             <div class="card-body">
               <span class="tag tag-pink">Design</span>
@@ -159,7 +199,7 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+              <img src="./images/blog/img/SummaryTable-of-System-Design-for-API-design.421e3983.png" alt="city" />
             </div>
             <div class="card-body">
               <span class="tag tag-pink">Design</span>
@@ -181,63 +221,6 @@
         </div>
       </div>
 
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam officia illo architecto nesciunt
-          dolorem molestiae voluptatum commodi exercitationem excepturi nulla nisi esse, recusandae vero veritatis,
-          aliquid blanditiis cum voluptate?
-          Ipsum fuga consectetur veniam illum quibusdam fugiat eius minus natus est nulla pariatur reprehenderit cumque
-          nemo, saepe aut quos? Quam ducimus fugiat at fugit nesciunt voluptatem dolorum repudiandae. Cum, suscipit!
-          Unde error quaerat laudantium sint delectus fuga perspiciatis pariatur corporis natus nihil reiciendis fugit,
-          distinctio, eaque doloremque veniam quo reprehenderit ipsum sapiente dolorum debitis saepe at cupiditate iste
-          explicabo? In!
-          Vero ipsa quod sit esse quos, aliquam nam modi veniam non, dolore quia numquam explicabo animi hic rem eaque
-          perspiciatis corporis? Error cupiditate dolores quidem doloribus consequuntur tempora veniam cum!
-          Deleniti quos nihil exercitationem placeat provident blanditiis ratione obcaecati, quaerat voluptatum, iusto
-          temporibus debitis porro necessitatibus minus eos facere? Cum praesentium, quasi debitis eos vitae natus illo.
-          Eius, quasi animi.
-          Ab vitae iure officia voluptates dignissimos provident eveniet fugit consectetur voluptatum atque quia
-          sapiente tempore recusandae porro exercitationem maxime minus distinctio ullam, ad non eius sequi nam
-          laboriosam amet? Corporis.
-          Molestias perspiciatis praesentium, odit, sapiente illo saepe natus totam dolor accusantium eligendi, omnis
-          commodi in. Expedita facere aut suscipit earum quia architecto! Placeat accusamus adipisci iure deserunt
-          sapiente odit fuga.
-          Blanditiis aspernatur alias, rerum labore numquam provident rem vel inventore accusamus tempora repellendus
-          illo? Vero odit quas ullam illo, iste in fugiat, officiis earum obcaecati odio sunt assumenda, repellat minus?
-          Reprehenderit ducimus consequuntur ab? Quo quisquam tempora sit odit voluptates impedit quod enim cupiditate
-          nihil ipsa eaque illo corrupti nemo, vitae numquam asperiores aut non unde. Maiores recusandae ipsa adipisci.
-          Veniam, accusantium quos. Alias porro, nostrum nemo quod quasi, molestias deleniti neque repellendus,
-          cupiditate cum aspernatur quam modi! Assumenda, pariatur voluptas? A error nostrum quam necessitatibus quidem
-          sunt assumenda dicta.
-          Debitis animi asperiores nobis quaerat, voluptatum cum architecto officiis, corrupti eaque facilis quos, odio
-          rem. Facilis earum deserunt reiciendis delectus aut, ea quaerat fuga exercitationem ab modi reprehenderit.
-          Odit, repellat!
-          Provident consequatur quia, culpa, tempore sint quidem harum corrupti perspiciatis libero quod, a deleniti
-          pariatur tenetur aliquam earum expedita quasi officia quos! Voluptatibus nesciunt ullam corrupti consequatur
-          molestias sequi eveniet.
-          Nihil sapiente aut necessitatibus quia neque officiis deserunt velit optio consequuntur? Suscipit rem iusto ea
-          eos? Dignissimos, inventore perspiciatis ipsum fugiat, aperiam facere explicabo praesentium, voluptatibus unde
-          repellat soluta dolorum.
-          Ducimus cumque blanditiis fugiat dicta sed maxime placeat exercitationem tempora incidunt dolore deserunt
-          distinctio praesentium iusto, quisquam voluptas repudiandae doloribus debitis quasi voluptatem alias quia
-          numquam hic, necessitatibus quas. Itaque?
-          Dolorem, facilis quasi. Quia aperiam modi soluta quaerat fugit! Possimus blanditiis temporibus omnis
-          repellendus excepturi voluptate deleniti. Architecto hic minus esse ad, deserunt, dolor soluta id, alias quasi
-          impedit voluptatem?
-          Optio eos vero blanditiis, earum id consequuntur asperiores numquam perspiciatis? Ut quo natus consectetur
-          blanditiis, eius tenetur dolore magni perferendis quasi. Porro, repellendus nulla corporis maiores reiciendis
-          excepturi obcaecati dignissimos.
-          Sed quidem pariatur, quis eligendi impedit nemo suscipit cum? Cupiditate molestiae sunt error, blanditiis
-          perspiciatis eveniet, dolor cumque ex iure laudantium unde amet magnam quisquam! Unde alias ullam minus autem!
-          Fugiat praesentium excepturi possimus inventore veritatis aperiam reprehenderit ad itaque, beatae eligendi,
-          harum, corporis numquam. Commodi dolor, natus eum sunt soluta repellat, recusandae, delectus ab labore
-          perspiciatis possimus sequi laudantium!
-          Ipsam molestiae excepturi, fugit inventore quo atque omnis amet ut esse asperiores maiores libero illum
-          architecto consectetur accusamus in repudiandae suscipit dolorum culpa qui exercitationem vero at consequuntur
-          perferendis. Voluptatum!
-          Deserunt, quos. Voluptatibus, ipsam! Eaque, corporis perspiciatis nostrum voluptas laborum, aperiam dolorem at
-          dolorum, mollitia voluptatem quis quod magnam vitae. Distinctio, saepe voluptate necessitatibus porro soluta
-          harum iusto sit praesentium.</p>
-      </div>
     </div>
   </div>
 
