@@ -154,7 +154,16 @@ header .hidden {
   padding: 9px 20px;
   text-align: center;
   margin-right: 20px;
+  /* background: linear-gradient(to bottom right, #3498db, #2ecc71); */
+  transition: background 5.5s ease;
+  /* Thời gian chuyển đổi màu */
 }
+
+#navbar-actions-portal .register:hover {
+  background: linear-gradient(to top right, rgb(25, 159, 101), rgb(75, 230, 163));
+  /* Đổi màu khi hover */
+}
+
 
 #navbar-actions-portal .signin {
   align-items: flex-start;

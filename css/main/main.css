@@ -5,6 +5,7 @@ button {
   display: block;
   padding: 0;
   color: inherit;
+  cursor: pointer;
 }
 
 .mode button i {
