@@ -1,0 +1,62 @@
+a {
+  text-decoration: none;
+  /* Xóa gạch chân cho thẻ <i> bên trong <a> */
+}
+
+i {
+  text-decoration: none;
+  /* Xóa gạch chân */
+  display: inline-block;
+  /* Đảm bảo nó hiển thị đúng như một block nhỏ */
+}
+
+.bx {
+  text-decoration: none;
+  /* Xóa gạch chân cho các icon của Boxicons */
+}
+
+
+.mode button i {
+  font-size: 20px;
+}
+
+
+.menu .mode {
+  position: fixed;
+  left: 22px;
+  bottom: 60px;
+}
+
+.menu .mode button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #404040;
+  background-color: #f0f0f0cc;
+  border-radius: 50%;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.menu .mode ._icon_1plrx_24 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+._button_1plrx_1 ._new_1plrx_32 {
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fa3e3e;
+  border-radius: 50%;
+}
