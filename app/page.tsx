@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 import '@/styles/slider.css';
 import '@/styles/post-viral.css';
 
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <div className="right">
-          <img src="/img/facion/frog-techs.gif" />
+          <Image src="/img/facion/frog-techs.gif" alt="Description of image" />
         </div>
       </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="cards">
           <div className="card">
             <div className="card-header">
-              <img src="/img/blog/img/banner.png" alt="rover" />
+              <Image src="/img/blog/img/banner.png" alt="rover" />
             </div>
             <div className="card-body">
               <span className="tag tag-teal">Technology</span>
@@ -58,7 +58,7 @@ export default function Home() {
                 ExpressJS, Ejs, MySQL, MongoDB
               </p>
               <div className="user">
-                <img
+                <Image
                   src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo"
                   alt="user" />
                 <div className="user-info">
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
           <div className="card">
             <div className="card-header">
-              <img src="/img/blog/img/laravel-socket.10ac0667.png" alt="ballons" />
+              <Image src="/img/blog/img/laravel-socket.10ac0667.png" alt="ballons" />
             </div>
             <div className="card-body">
               <span className="tag tag-purple">Popular</span>
@@ -82,7 +82,7 @@ export default function Home() {
                 deal with that fear.
               </p>
               <div className="user">
-                <img src="https://lh3.googleusercontent.com/ogw/ADGmqu8sn9zF15pW59JIYiLgx3PQ3EyZLFp5Zqao906l=s32-c-mo"
+                <Image src="https://lh3.googleusercontent.com/ogw/ADGmqu8sn9zF15pW59JIYiLgx3PQ3EyZLFp5Zqao906l=s32-c-mo"
                   alt="user" />
                 <div className="user-info">
                   <h5>Eyup Ucmaz</h5>
@@ -93,7 +93,7 @@ export default function Home() {
           </div>
           <div className="card">
             <div className="card-header">
-              <img src="/img/blog/img/main.png" alt="city" />
+              <Image src="/img/blog/img/main.png" alt="city" />
             </div>
             <div className="card-body">
               <span className="tag tag-pink">Design</span>
@@ -104,7 +104,7 @@ export default function Home() {
                 Dashboard Design Guidelines
               </p>
               <div className="user">
-                <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                <Image src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
                 <div className="user-info">
                   <h5>Carrie Br/ewer</h5>
                   <small>1w ago</small>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="card">
             <div className="card-header">
-              <img src="/img/blog/img/SummaryTable-of-System-Design-for-API-design.421e3983.png" alt="city" />
+              <Image src="/img/blog/img/SummaryTable-of-System-Design-for-API-design.421e3983.png" alt="city" />
             </div>
             <div className="card-body">
               <span className="tag tag-pink">Design</span>
@@ -125,7 +125,7 @@ export default function Home() {
                 Dashboard Design Guidelines
               </p>
               <div className="user">
-                <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                <Image src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
                 <div className="user-info">
                   <h5>Carrie Br/ewer</h5>
                   <small>1w ago</small>

@@ -16,7 +16,7 @@ export default function Login() {
           <button className="form-btn">Log in</button>
         </form>
         <p className="sign-up-label">
-          Don't have an account? <span className="sign-up-link">Sign up</span>
+          Don&apos;t have an account? <span className="sign-up-link">Sign up</span>
         </p>
         <div className="buttons-container">
           <div className="apple-login-button">
