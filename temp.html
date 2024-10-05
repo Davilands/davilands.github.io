@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>slider</h1>
+
+  <style>
+    .slides {
+      display: flex;
+      align-items: center;
+    }
+
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      height: 200px;
+      line-height: 16px;
+      margin: 18px 0px 0px;
+      border-radius: 20px;
+      background: rgb(45, 39, 144);
+      background: linear-gradient(90deg, rgba(45, 39, 144, 1) 0%, rgba(34, 34, 152, 1) 0%, rgba(107, 198, 217, 1) 100%);
+      /* background: rgb(238, 174, 202);
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    }
+
+    .slides .left .title {
+      color: #fff;
+      display: inline;
+      font-family: system-ui;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+    }
+
+    .slides .left .desc {
+      color: #fff;
+      font-family: system-ui;
+      line-height: 25.6px;
+      margin: 10px 0px 24px;
+      width: 60%;
+    }
+
+    .slides .left a {
+      border-color: #fff;
+      border-radius: 16px;
+      border-style: solid;
+      border-width: 1.81132px;
+      color: #fff;
+      display: inline-block;
+      font-family: system-ui;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22.4px;
+      padding: 4px 10px;
+      text-align: center;
+    }
+
+    .slides .right {
+      display: flex;
+      flex-basis: 0%;
+      justify-content: flex-end;
+      line-height: 16px;
+      width: auto;
+      /* giữ nguyên chiều rộng của ảnh */
+      height: 100%;
+      /* đặt chiều cao của ảnh bằng với chiều cao của div */
+      object-fit: contain;
+      /* giữ nguyên tỉ lệ ảnh và phù hợp với div */
+    }
+
+    .slides .right img {
+      color: #00e;
+      line-height: 16px;
+    }
+
+
+    .prev,
+    .next {
+      /* position: absolute; */
+      width: 32px;
+      height: 32px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      align-items: center;
+      z-index: 999;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: #00000029 0px 3px 6px 0px;
+      color: #4b4b4b;
+      font-size: 20px;
+      font-weight: 20;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .prev {
+      margin-right: -20px;
+    }
+
+    .next {
+      margin-left: -20px;
+    }
+
+    /* .prev {
+      left: 0;
+      transform: translateY(-100%);
+    }
+
+    .next {
+      right: 0;
+      transform: translateY(100%);
+    } */
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    /* Media query cho mobile và tablet */
+    @media (max-width: 768px) {
+      .slide {
+        padding: 20px 30px;
+      }
+
+      .slides .right {
+        display: none;
+      }
+
+      .slides .left {
+        width: 100%;
+      }
+
+      .slides .left .title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+      }
+
+      .slides .left .desc {
+        line-height: 20px;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .slides .left a {
+        font-size: 15px;
+        font-weight: 700;
+        padding: 7px 15px;
+      }
+
+      .prev,
+      .next {
+        /* position: absolute; */
+        width: 80px;
+        border-radius: 50%;
+      }
+    }
+
+    /* Ẩn tất cả các phần tử có class "slide" mà không có class "active" */
+    .slide:not(.active) {
+      display: none;
+    }
+  </style>
+
+  <div class="slides" id="slideContainer">
+
+    <a class="prev" onclick="moveSlide(-1)">&lt;</a>
+
+    <div class="slide ">
+      <div class="left">
+        <p class="title">
+          Đây là tiêu đề
+        </p>
+
+        <p class="desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet accusamus magnam atque qui quis facilis
+          consectetur consequatur nulla quaerat iusto, repellendus perferendis ex quo ea obcaecati dignissimos? Vel,
+          laborum quidem?
+        </p>
+
+        <a href="/">
+          ĐĂNG KÝ NGAY
+        </a>
+      </div>
+      <div class="right">
+        <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+      </div>
+    </div>
+
+    <div class="slide active">
+      <div class="left">
+        <p class="title">
+          Trang 2
+        </p>
+
+        <p class="desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet accusamus magnam atque qui quis facilis
+          consectetur consequatur nulla quaerat iusto, repellendus perferendis ex quo ea obcaecati dignissimos? Vel,
+          laborum quidem?
+        </p>
+
+        <a href="/">
+          ĐĂNG KÝ NGAY
+        </a>
+      </div>
+      <div class="right">
+        <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="left">
+        <p class="title">
+          Trang 3
+        </p>
+
+        <p class="desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet accusamus magnam atque qui quis facilis
+          consectetur consequatur nulla quaerat iusto, repellendus perferendis ex quo ea obcaecati dignissimos? Vel,
+          laborum quidem?
+        </p>
+
+        <a href="/">
+          ĐĂNG KÝ NGAY
+        </a>
+      </div>
+      <div class="right">
+        <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+      </div>
+    </div>
+
+    <a class="next" onclick="moveSlide(1)">&gt;</a>
+  </div>
+
+</body>
+
+</html>

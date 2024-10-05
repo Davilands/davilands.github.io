@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <style>
+    /* Container chính bao quanh slider */
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 20px;
+      /* Bo góc cho toàn bộ container */
+    }
+
+    /* Các slide được đặt cạnh nhau theo hàng ngang */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: calc(100vw * 5);
+      /* Đảm bảo tổng chiều rộng cho tất cả slide */
+    }
+
+    /* Mỗi slide chiếm 100vw */
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      width: 100vw;
+      height: 200px;
+      margin: 18px 0px 0px;
+      background: rgb(45, 39, 144);
+      background: linear-gradient(90deg, rgba(45, 39, 144, 1) 0%, rgba(34, 34, 152, 1) 0%, rgba(107, 198, 217, 1) 100%);
+    }
+
+    /* Nút chuyển slide */
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    /* Điều chỉnh kích thước cho mobile */
+    @media (max-width: 768px) {
+      .slide {
+        padding: 20px 30px;
+      }
+
+      .slide .right {
+        display: none;
+      }
+
+      .prev,
+      .next {
+        width: 80px;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>slider</h1>
+
+  <div class="slider-container">
+    <div class="slides" id="slideContainer">
+
+      <!-- Slide "ảo" (sao chép từ slide cuối) -->
+      <div class="slide">
+        <div class="left">
+          <p class="title">Trang 3</p>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="/">ĐĂNG KÝ NGAY</a>
+        </div>
+        <div class="right">
+          <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+        </div>
+      </div>
+
+      <!-- Slide thật -->
+      <div class="slide">
+        <div class="left">
+          <p class="title">Đây là tiêu đề</p>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="/">ĐĂNG KÝ NGAY</a>
+        </div>
+        <div class="right">
+          <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="left">
+          <p class="title">Trang 2</p>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="/">ĐĂNG KÝ NGAY</a>
+        </div>
+        <div class="right">
+          <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="left">
+          <p class="title">Trang 3</p>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="/">ĐĂNG KÝ NGAY</a>
+        </div>
+        <div class="right">
+          <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+        </div>
+      </div>
+
+      <!-- Slide "ảo" (sao chép từ slide đầu tiên) -->
+      <div class="slide">
+        <div class="left">
+          <p class="title">Đây là tiêu đề</p>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="/">ĐĂNG KÝ NGAY</a>
+        </div>
+        <div class="right">
+          <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <button class="prev" onclick="moveSlide(-1)">&lt;</button>
+    <button class="next" onclick="moveSlide(1)">&gt;</button>
+  </div>
+
+
+  <script>
+    const slideContainer = document.getElementById('slideContainer');
+    let slideIndex = 1;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    // Khởi tạo ban đầu, dịch chuyển đến slide thật đầu tiên
+    slideContainer.style.transform = `translateX(-100vw)`;
+
+    function moveSlide(direction) {
+      // Cập nhật chỉ số slide
+      slideIndex = slideIndex + direction;
+
+      // Thực hiện dịch chuyển slide
+      slideContainer.style.transition = 'transform 0.5s ease-in-out';
+      slideContainer.style.transform = `translateX(${-100 * slideIndex}vw)`;
+
+      // Xử lý khi đến slide "ảo" (slide 0 hoặc slide cuối cùng)
+      if (slideIndex === 0) {
+        setTimeout(() => {
+          slideContainer.style.transition = 'none'; // Loại bỏ transition khi nhảy về vị trí thật
+          slideIndex = totalSlides - 2; // Nhảy về slide thật cuối cùng
+          slideContainer.style.transform = `translateX(${-100 * slideIndex}vw)`;
+        }, 500); // Đợi cho animation hoàn thành
+      } else if (slideIndex === totalSlides - 1) {
+        setTimeout(() => {
+          slideContainer.style.transition = 'none'; // Loại bỏ transition khi nhảy về vị trí thật
+          slideIndex = 1; // Nhảy về slide thật đầu tiên
+          slideContainer.style.transform = `translateX(${-100 * slideIndex}vw)`;
+        }, 500); // Đợi cho animation hoàn thành
+      }
+    }
+
+    // Tự động chuyển slide sau mỗi 3 giây
+    setInterval(() => {
+      moveSlide(1);
+    }, 3000);
+  </script>
+
+</body>
+
+</html>
