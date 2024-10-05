@@ -6,6 +6,7 @@ import Header from '@/app/header/page';
 import Menu from '@/app/menu/page';
 import Footer from '@/app/footer/page';
 import Login from '@/app/login/page';
+import Slides from '@/app/slider/page';
 import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body>
         <Header />
 
+        {/* <Slides /> */}
         <div className="main">
           <Menu />
           {/* <Login /> */}

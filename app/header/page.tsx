@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import '@/styles/header.css';
 
 export default function Header() {
@@ -9,7 +9,7 @@ export default function Header() {
 
         <div className="header" id="header">
           <div className="logo">
-            <Image src="/img/ico/frog-bc.png" alt="F8" />
+            <img src="/img/ico/frog-bc.png" alt="F8" />
             <h1 className=""><a className="_subTitle_vdbp4_58 d-lg-none" href="/"> <Link href={"/"}>DaviLands</Link> </a></h1>
           </div>
 

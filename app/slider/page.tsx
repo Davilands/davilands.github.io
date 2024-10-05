@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import '@/styles/menu.css';
+import '@/styles/slides.css';
 
-export default function Slider() {
+export default function Slides() {
   const [slideIndex, setSlideIndex] = useState(1); // Đặt trạng thái cho slideIndex
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function Slider() {
   return (
     <div className="slider-container">
       <div className="slides" id="slideContainer">
-        <div className="slide slide-3">
+        <div className="slide 3">
           <div className="left">
             <p className="title">Trang 3</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
@@ -57,7 +57,7 @@ export default function Slider() {
           </div>
         </div>
 
-        <div className="slide slide-1">
+        <div className="slide 1">
           <div className="left">
             <p className="title">Đây là tiêu đề</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
@@ -68,7 +68,7 @@ export default function Slider() {
           </div>
         </div>
 
-        <div className="slide slide-2">
+        <div className="slide 2">
           <div className="left">
             <p className="title">Trang 2</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
@@ -79,7 +79,7 @@ export default function Slider() {
           </div>
         </div>
 
-        <div className="slide slide-3">
+        <div className="slide 3">
           <div className="left">
             <p className="title">Trang 3</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
@@ -91,7 +91,7 @@ export default function Slider() {
         </div>
 
         {/* Slide "ảo" (sao chép từ slide đầu tiên) */}
-        <div className="slide slide-1">
+        <div className="slide 1">
           <div className="left">
             <p className="title">Đây là tiêu đề</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
