@@ -60,3 +60,7 @@ i {
   background-color: #fa3e3e;
   border-radius: 50%;
 }
+
+.container {
+  width: calc(100% - 116px);
+}

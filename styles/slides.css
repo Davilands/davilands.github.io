@@ -1,5 +1,6 @@
 .slider-container {
   width: 100%;
+  /* width: calc(100% - 96px); */
   overflow: hidden;
   position: relative;
   border-radius: 20px;
@@ -11,7 +12,10 @@
   display: flex;
   transition: transform 0.5s ease-in-out;
   /* Đảm bảo đủ chiều rộng cho các slide */
-  width: calc(100vw * 5);
+  /* width: calc(100vw * 5); */
+  width: calc(100% - 96px);
+  width: 100%;
+  /* Chiều rộng trừ đi menu */
 }
 
 .slide {
@@ -20,16 +24,29 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
-  width: 100vw;
+  /* width: 100vw; */
+  /* width: 100%; */
+  /* flex: 0 0 calc(100vw - 96px); */
+  /* Mỗi slide chiếm toàn bộ không gian trừ đi menu */
+  /* width: calc(100% - 116px); */
+  /* Chiều rộng trừ đi menu */
+  flex: 0 0 100%;
   height: 200px;
   line-height: 16px;
   margin: 18px 0px 0px;
-  margin-right: 15px;
+  margin-right: 7px;
+  margin-left: 7px;
   margin-top: 0px;
   border-radius: 20px;
   /* Bo góc cho từng slide */
   background: rgb(45, 39, 144);
   background: linear-gradient(90deg, rgba(45, 39, 144, 1) 0%, rgba(34, 34, 152, 1) 0%, rgba(107, 198, 217, 1) 100%);
+
+  display: none;
+}
+
+.slides .active {
+  display: flex;
 }
 
 .slide .left .title {
