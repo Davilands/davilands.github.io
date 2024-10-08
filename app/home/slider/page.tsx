@@ -19,7 +19,7 @@ export default function Slides() {
 
       if (slide) {
         const slideWidth = slide.offsetWidth || 0; // Lấy chiều rộng của slide
-        // slideContainer.style.transform = `translateX(calc(-${slideWidth * slideIndex}px - 20px))`;
+        slideContainer.style.transform = `translateX(calc(-${slideWidth * slideIndex}px - 3px))`;
       }
     }
   }, [slideIndex]);
