@@ -304,3 +304,37 @@
 .dark-mode .container {
   background-color: var(--dark-background);
 }
+
+/* ================== HEADER ==================*/
+.dark-mode .search input {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .search .search-icon {
+  background-color: #2a2a2a00;
+}
+
+/* =================== MENU =========================*/
+/* Media query cho mobile và tablet */
+@media (max-width: 768px) {
+  .dark-mode .menu ul {
+    /* background-color: var(--dark-menu-background); */
+    background: rgb(12, 154, 166);
+    background: linear-gradient(90deg, rgba(12, 154, 166, 1) 0%, rgba(66, 182, 125, 1) 35%, rgba(112, 210, 97, 1) 100%);
+  }
+
+  .dark-mode .menu ul li a {
+    background-color: #00000000;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .dark-mode .menu ul li a span {
+    color: #ffffff;
+    display: none;
+  }
+
+  .dark-mode .menu ul li .active {
+    color: #058bf1;
+  }
+}
