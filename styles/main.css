@@ -27,6 +27,13 @@ i {
   bottom: 60px;
 }
 
+.main {
+  min-height: calc(100vh - 100px);
+  /* Adjust 100px to match your footer's height */
+  display: flex;
+  flex-direction: column;
+}
+
 .menu .mode button {
   width: 44px;
   height: 44px;

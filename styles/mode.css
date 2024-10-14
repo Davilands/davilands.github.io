@@ -320,7 +320,8 @@
   .dark-mode .menu ul {
     /* background-color: var(--dark-menu-background); */
     background: rgb(12, 154, 166);
-    background: linear-gradient(90deg, rgba(12, 154, 166, 1) 0%, rgba(66, 182, 125, 1) 35%, rgba(112, 210, 97, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(12, 154, 166, 1) 0%, rgba(66, 182, 125, 1) 35%, rgba(112, 210, 97, 1) 100%); */
+    background: linear-gradient(135deg, #0097b2, #7ed957);
   }
 
   .dark-mode .menu ul li a {

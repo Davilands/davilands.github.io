@@ -46,8 +46,16 @@ export default function Slides() {
 
       // Dịch chuyển với giá trị chính xác dựa trên chiều rộng của slide
       slideContainer.style.transition = 'transform 0.5s ease-in-out';
+
       let ss = newSlideIndex * 3; // Cách tính cho hiệu ứng dịch chuyển
-      slideContainer.style.transform = `translateX(calc(-${slideWidth * newSlideIndex}px - ${ss}px))`;
+      // slideContainer.style.transform = `translateX(calc(-${slideWidth * newSlideIndex}px - ${ss}px))`;
+
+      // Cập nhật phép tính để tạo hiệu ứng trượt vô tận
+      if (newSlideIndex === 0) {
+        slideContainer.style.transform = `translateX(calc(-${slideWidth * (totalSlides - 2)}px - ${ss}px))`; // Về slide cuối
+      } else {
+        slideContainer.style.transform = `translateX(calc(-${slideWidth * newSlideIndex}px - ${ss}px))`;
+      }
     }
   };
 
