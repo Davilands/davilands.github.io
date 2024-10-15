@@ -33,12 +33,12 @@ export default function Menu() {
       // Cuộn xuống -> ẩn menu
       menu.classList.add('hidden');
       if (modeDiv)
-        modeDiv.classList.remove('mode');
+        modeDiv.classList.add('mode');
     } else {
       // Cuộn lên -> hiện menu
       menu.classList.remove('hidden');
       if (modeDiv)
-        modeDiv.classList.add('mode');
+        modeDiv.classList.remove('mode');
     }
 
     // Cập nhật lastScrollY để so sánh trong lần cuộn tiếp theo
