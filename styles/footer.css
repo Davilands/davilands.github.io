@@ -4,7 +4,6 @@
   box-sizing: border-box;
 } */
 footer {
-  z-index: 5;
   position: relative;
   border-top: solid 1px #59595936;
   justify-content: center;
@@ -13,4 +12,13 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+
+/* PC */
+@media (min-width: 64em) {
+  footer {
+    z-index: 5;
+  }
 }
