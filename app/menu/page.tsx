@@ -1,11 +1,13 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 
 import Link from 'next/link';
+import Script from 'next/script'; // Nhập thành phần Script từ next/script
 import { useState, useEffect } from 'react';
 import '@/styles/menu.css';
 
-export default function Page() {
+export default function Menu() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  let lastScrollY = 0;
 
   useEffect(() => {
     const mode = localStorage.getItem('modeByThean');
@@ -13,7 +15,30 @@ export default function Page() {
       setIsDarkMode(true);
       document.body.classList.add('dark-mode');
     }
+
+    document.body.addEventListener('scroll', handleScroll)
+    return () => document.body.removeEventListener('scroll', handleScroll);
+
   }, []);
+
+  const handleScroll = () => {
+    const menu = document.querySelector("#menu ul");
+    const scrollPosition = document.body.scrollTop; // Lấy vị trí cuộn của body
+    console.log('scroll body', scrollPosition);
+
+    if (!menu)
+      return;
+    if (scrollPosition > lastScrollY) {
+      // Cuộn xuống -> ẩn menu
+      menu.classList.add('hidden');
+    } else {
+      // Cuộn lên -> hiện menu
+      menu.classList.remove('hidden');
+    }
+
+    // Cập nhật lastScrollY để so sánh trong lần cuộn tiếp theo
+    lastScrollY = scrollPosition;
+  }
 
   const toggleMode = () => {
     const newMode = !isDarkMode;
@@ -24,7 +49,8 @@ export default function Page() {
 
   return (
     <div>
-      <nav className="menu">
+
+      <nav className='menu' id="menu"> {/* Thêm class 'hidden' nếu menu bị ẩn */}
         <ul>
           <li>
             <Link href="/" className="active">
@@ -45,6 +71,8 @@ export default function Page() {
           </button>
         </div>
       </nav>
+
+
     </div>
   );
 }

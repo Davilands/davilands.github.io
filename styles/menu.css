@@ -10,6 +10,7 @@
   list-style: none;
   padding: 0;
   margin-top: 70px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .menu ul li {
@@ -100,6 +101,13 @@ svg:not(:host).svg-inline--fa {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 45px;
+
+
+  }
+
+  .hidden {
+    transform: translateY(200%);
+    /* Dịch chuyển menu ra khỏi khung nhìn */
   }
 
   .menu ul {
