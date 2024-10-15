@@ -49,6 +49,15 @@ button {
   background: rgb(0, 155, 251);
 }
 
+/* Handle */
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: rgb(0, 155, 251);
+}
+
+/* Handle on hover */
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #00a77892;
+}
 
 
 

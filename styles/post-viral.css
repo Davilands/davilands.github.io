@@ -138,4 +138,12 @@
   .post-viral {
     padding-right: 0px;
   }
+
+  div.main div.container div.post-viral div.title h2 {
+    width: 60%;
+  }
+
+  .post-viral .title a {
+    font-size: 16px;
+  }
 }

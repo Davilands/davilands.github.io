@@ -24,7 +24,7 @@ export default function Header() {
 
           <div className="search">
             <i className="search-icon"></i>
-            <input placeholder="Tìm kiếm ..."
+            <input placeholder="Tìm kiếm..."
               value={searchValue}
               onChange={searchAllPage} />
           </div>
