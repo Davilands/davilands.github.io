@@ -16,17 +16,6 @@ i {
 }
 
 
-.mode button i {
-  font-size: 20px;
-}
-
-
-.menu .mode {
-  position: fixed;
-  left: 22px;
-  bottom: 60px;
-}
-
 .main {
   min-height: calc(100vh - 100px);
   /* Adjust 100px to match your footer's height */
@@ -34,7 +23,7 @@ i {
   flex-direction: column;
 }
 
-.menu .mode button {
+.menu .mode-mobile button {
   width: 44px;
   height: 44px;
   display: flex;
@@ -48,7 +37,7 @@ i {
   cursor: pointer;
 }
 
-.menu .mode ._icon_1plrx_24 {
+.menu .mode-mobile ._icon_1plrx_24 {
   position: relative;
   width: 100%;
   height: 100%;

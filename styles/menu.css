@@ -6,6 +6,22 @@
 }
 
 
+.mode-mobile button i {
+  font-size: 20px;
+}
+
+
+.menu .mode-mobile {
+  position: fixed;
+  left: 22px;
+  bottom: 60px;
+}
+
+
+
+
+
+
 .menu ul {
   list-style: none;
   padding: 0;
@@ -101,8 +117,10 @@ svg:not(:host).svg-inline--fa {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 45px;
+  }
 
-
+  .menu .mode.mode-mobile {
+    bottom: 20px;
   }
 
   .hidden {

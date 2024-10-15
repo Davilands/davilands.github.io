@@ -25,15 +25,20 @@ export default function Menu() {
     const menu = document.querySelector("#menu ul");
     const scrollPosition = document.body.scrollTop; // Lấy vị trí cuộn của body
     console.log('scroll body', scrollPosition);
+    const modeDiv = document.querySelector('.mode-mobile');
 
     if (!menu)
       return;
     if (scrollPosition > lastScrollY) {
       // Cuộn xuống -> ẩn menu
       menu.classList.add('hidden');
+      if (modeDiv)
+        modeDiv.classList.remove('mode');
     } else {
       // Cuộn lên -> hiện menu
       menu.classList.remove('hidden');
+      if (modeDiv)
+        modeDiv.classList.add('mode');
     }
 
     // Cập nhật lastScrollY để so sánh trong lần cuộn tiếp theo
@@ -65,7 +70,7 @@ export default function Menu() {
           </li>
           {/* Add other links similarly */}
         </ul>
-        <div className="mode">
+        <div className="mode-mobile">
           <button onClick={toggleMode}>
             <i className={`bx ${isDarkMode ? 'bx-moon' : 'bx-sun'} sun-moon`}></i>
           </button>
