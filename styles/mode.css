@@ -2,7 +2,8 @@
 /* Nhập file chứa các biến màu */
 
 .dark-mode {
-  background-color: var(--dark-background)
+  background-color: var(--dark-background);
+  background-color: #1A1A1A;
 }
 
 /* header */
@@ -341,4 +342,25 @@
   .dark-mode .menu ul li .active {
     color: #058bf1;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.dark-mode footer {
+  background-color: #242424;
+}
+
+.dark-mode footer p {
+  color: white;
 }
