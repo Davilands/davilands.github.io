@@ -96,6 +96,12 @@ svg:not(:host).svg-inline--fa {
     color: #1a1a1a;
   }
 
+  .mode-mobile {
+    position: absolute;
+    /* Hoặc relative */
+    z-index: 100;
+  }
+
 }
 
 /* Media query cho mobile và tablet */

@@ -147,3 +147,16 @@
     font-size: 16px;
   }
 }
+
+/* PC */
+@media (min-width: 64em) {
+  .card {
+    transition: transform 0.3s ease;
+    /* Tạo hiệu ứng mượt mà khi hover */
+  }
+
+  .card:hover {
+    transform: translateY(-20px);
+    /* Dịch lên 20px khi hover */
+  }
+}

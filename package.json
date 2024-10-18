@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "13.5.7",
+    "oh-vue-icons": "^1.0.0-rc3",
     "react": "^18",
     "react-dom": "^18"
   },

@@ -2,8 +2,16 @@
 /* Nhập file chứa các biến màu */
 
 .dark-mode {
-  background-color: var(--dark-background);
-  background-color: #1A1A1A;
+  /* background-color: var(--dark-background); */
+  /* background-color: #1A1A1A; */
+  /* transition: background-color 0.5s ease; */
+  /* Hiệu ứng chuyển đổi màu trong 0.5 giây */
+  transition: color .5s, background-color .5s;
+  transition-behavior: normal, normal;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: color, #1A1A1A;
 }
 
 /* header */
@@ -309,6 +317,11 @@
 }
 
 /* ================== HEADER ==================*/
+
+.dark-mode #navbar-actions-portal .register {
+  border: 2px solid rgb(25 135 159);
+}
+
 .dark-mode #navbar-actions-portal .signin {
   background-image: linear-gradient(to right bottom, rgb(22 65 125), rgb(2 132 163));
 }
@@ -322,6 +335,11 @@
 }
 
 /* =================== MENU =========================*/
+
+.dark-mode .menu {
+  background: #1A1A1A;
+}
+
 /* Media query cho mobile và tablet */
 @media (max-width: 768px) {
   .dark-mode .menu ul {
@@ -344,7 +362,34 @@
   }
 }
 
+@media (min-width: 64em) {
+  .dark-mode .menu ul li .active {
+    background: #52baff;
+    /* color: #1a1a1a; */
+  }
 
+  .dark-mode .menu ul li a {
+    color: #fff;
+  }
+
+  .dark-mode .menu ul li a span {
+    color: #fff;
+  }
+}
+
+
+/*=============================== MAIN ===========================*/
+
+.dark-mode .card {
+  box-shadow: 0 2px 20px rgb(255 255 255 / 20%);
+  background-color: #242424;
+  box-shadow: 0 2px 20px rgb(255 255 255 / 20%);
+  color: white;
+}
+
+.dark-mode .post-viral .title {
+  color: white;
+}
 
 
 
