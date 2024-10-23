@@ -337,6 +337,13 @@
 /* =================== MENU =========================*/
 
 
+/* PC */
+@media (min-width: 64em) {
+  .dark-mode .menu {
+    background: #1A1A1A;
+  }
+}
+
 /* Media query cho mobile và tablet */
 @media (max-width: 768px) {
   .dark-mode .menu ul {
