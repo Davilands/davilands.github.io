@@ -66,7 +66,24 @@ export default function Slides() {
           <div className="left">
             <p className="title">Trang 3</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <Link href="/">ĐĂNG KÝ NGAY</Link>
+
+
+            <button className="animated-button">
+              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span className="text">BẮT ĐẦU NGAY</span>
+              <span className="circle"></span>
+              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+
+
           </div>
           <div className="right">
             <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="Banner 3" />
@@ -77,7 +94,22 @@ export default function Slides() {
           <div className="left">
             <p className="title">Đây là tiêu đề</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <Link href="/">ĐĂNG KÝ NGAY</Link>
+
+            <button className="animated-button">
+              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span className="text">BẮT ĐẦU NGAY</span>
+              <span className="circle"></span>
+              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+
           </div>
           <div className="right">
             <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="Banner 1" />
@@ -88,7 +120,22 @@ export default function Slides() {
           <div className="left">
             <p className="title">Trang 2</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <Link href="/">ĐĂNG KÝ NGAY</Link>
+
+            <button className="animated-button">
+              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span className="text">BẮT ĐẦU NGAY</span>
+              <span className="circle"></span>
+              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+
           </div>
           <div className="right">
             <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="Banner 2" />
@@ -99,7 +146,22 @@ export default function Slides() {
           <div className="left">
             <p className="title">Trang 3</p>
             <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <Link href="/">ĐĂNG KÝ NGAY</Link>
+
+            <button className="animated-button">
+              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span className="text">BẮT ĐẦU NGAY</span>
+              <span className="circle"></span>
+              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+
           </div>
           <div className="right">
             <img src="https://files.fullstack.edu.vn/f8-prod/banners/36/6454dee96205c.png" alt="Banner 3" />
